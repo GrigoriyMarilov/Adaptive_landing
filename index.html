@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style/style.css">
+	<link rel="stylesheet" href="./style/tablet.css">
+	<link rel="stylesheet" href="./style/mobile.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Cookie&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Tinos&display=swap"
+		rel="stylesheet">
+	<title>Restaurant-lending</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="main">
+			<header class="header">
+				<div class="content header__content header-content-mod container">
+					<div class="logo header__logo header-logo-mod">
+						<svg width="100" height="100%" viewBox="0 0 100 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<rect x="2.12132" y="33.981" width="45.0566" height="45.0566"
+								transform="rotate(-45 2.12132 33.981)" stroke="#FF7400" stroke-width="3" />
+							<rect x="34.159" y="33.981" width="45.0566" height="45.0566" transform="rotate(-45 34.159 33.981)"
+								stroke="#FF7400" stroke-width="3" />
+						</svg>
+					</div>
+					<div class="logo header__logo header-logo-mod header-logo-mobile">
+						<svg width="45" height="100%" viewBox="0 0 45 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<rect x="2.1069" width="18.7734" height="18.7734"
+								transform="matrix(0.702301 -0.71188 0.702301 0.71188 0.627223 16.9999)" stroke="#FF7400"
+								stroke-width="3" />
+							<rect x="2.1069" width="18.7734" height="18.7734"
+								transform="matrix(0.702301 -0.71188 0.702301 0.71188 15.0442 16.9999)" stroke="#FF7400"
+								stroke-width="3" />
+						</svg>
+					</div>
+					<nav class="nav">
+						<ul class="menu header__menu header-menu-mod">
+							<li onclick="liScroll(0)">Главная</li>
+							<li onclick="liScroll(1)">Меню</li>
+							<li onclick="liScroll(2)">О нас</li>
+							<li onclick="liScroll(3)">Бронь</li>
+							<li><iframe src="./assets/img/svg/cart.svg"></iframe>
+							</li>
+						</ul>
+						<div class="whiteline"></div>
+						<div class="contact header__contact header-contact-mod">
+							<div class="telephone"><a href=""><img src="./assets/img/phone.png" alt="">+999-888-76-54</a></div>
+							<span class="text14 w400">Свяжитесь с нами для
+								бронирования</span>
+						</div>
+						<button class="reserve"><span class="text14 w700 text__reserve">Заказ столика</span> </button>
+					</nav>
+					<div class="burger header__burger" onclick="burger()">
+						<span></span><span></span><span></span>
+					</div>
+				</div>
+			</header>
+			<div class="container">
+				<div class="content main__content main-content-mod">
+					<span class="main-text-span1">Добро пожаловать в </span>
+					<span class="main-text-span2">Наш ресторан</span>
+					<span class="main-text-span3">
+						<span class="main-whiteline"></span>
+						ДОМ ЛУЧШЕЙ ЕДЫ
+						<span class="main-whiteline"></span>
+					</span>
+					<button class="view-menu-button"><span class="text14 w700">VIEW MENU</span></button>
+				</div>
+			</div>
+			<div class="container">
+				<div class="main-cards main-cards-mod">
+					<div class="card">
+						<img src="./assets/img/Mask-Group.png" alt="" class="card__img">
+						<span class="card__name">Магическая <span class="card__name card-name-orange">Атмосфера</span></span>
+						<span class="card__text">В нашем заведении царит магическая атмосфера
+							наполненная вкусными ароматами</span>
+					</div>
+					<div class="card">
+						<img src="./assets/img/Mask-Group.png" alt="" class="card__img">
+						<span class="card__name">Лучшее качество <span class="card__name card-name-orange">Еды</span></span>
+						<span class="card__text">Качество нашей <br>
+							Еды - отменное!
+						</span>
+					</div>
+					<div class="card">
+						<img src="./assets/img/Mask-Group.png" alt="" class="card__img">
+						<span class="card__name">Недорогая <span class="card__name card-name-orange">Еда</span></span>
+						<span class="card__text">Стоимость нашей Еды
+							зависит только от ее
+							количества. Качество
+							всегда на высоте!</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<section class="section history__section history-section-mod">
+			<div class="content history__content history-content-mod container">
+				<div class="history-text-content">
+					<h1 class="section-h1">Наша <span class="orange">История</span></h1>
+					<span class="text16 text16__history">Как и у любого другого самобытного места, у нас есть своя, особая
+						история. Идея ресторана пришла основателям неожиданно. Во время прогулки по лесу создатель нашего
+						ресторана застрял в сотнях километров от ближайшего населенного пункта. Вдали от цивилизации и связи
+						им пришлось навремя обустровать себе нехитрый быт, добывать и готовить себе еду.</span>
+					<div class="info history__info history-info-mod">
+						<div class="information"><span class="information__count">93</span>
+							<span class="information__name">Напитки</span>
+						</div>
+						<div class="information"><span class="information__count">206</span>
+							<span class="information__name">Блюда</span>
+						</div>
+						<div class="information"><span class="information__count">71</span>
+							<span class="information__name">Закуски</span>
+						</div>
+					</div>
+				</div>
+				<div class="history-img-content">
+					<img class="history-img-1" src="./assets/img/history-img-1.png" alt="">
+					<img class="history-img-2" src="./assets/img/history-img-2.png" alt="">
+					<img class="history-img-3" src="./assets/img/history-img-3.png" alt="">
+					<div class="design-box"></div>
+				</div>
+			</div>
+			<div class="banner history__banner history-banner-mod">
+				<div class="banner-content container">
+					<div class="banner__text">
+						<span class="orange banner-orange-text">Отпразднуйте в одном из
+							самых лучших ресторанов.</span>
+						<span class="text24 w700 banner-small-text">Только в этом месяце бизнес-ланч от 250 ₽</span>
+					</div>
+					<button class="button banner__button">ЗАКАЗ СТОЛИКА</button>
+				</div>
+			</div>
+		</section>
+		<section class="restaurant-food section">
+			<div class="restaraunt-food-content container">
+				<h2 class="restaurant-food-h1">Наши <span class="orange">Блюда</span></h2>
+				<div class="restaurant-food-box">
+					<img class="restaurant-food-box-first-img" src="./assets/img/restaurant-food-img1.png" alt="">
+					<ul class="restaurant-list">
+						<li class="restaurant-food-li">
+							<img class="restaurant-food-li-img" src="./assets/img/hamburger-1.png" alt="">
+							<div class="restaurant-food-li-content">
+								<span class="restaurant-li-name">Гамбургер мини </span>
+								<svg width="206" height="2" viewBox="0 0 206 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M1 1L5.03162 1.00988M91.3083 1.22134L95.3399 1.23123M39.7036 1.09486L43.7352 1.10474M130.012 1.31621L134.043 1.32609M20.3518 1.04743L24.3834 1.05731M110.66 1.26877L114.692 1.27866M59.0553 1.14229L63.087 1.15217M149.364 1.36364L153.395 1.37352M7.45059 1.01581L11.4822 1.02569M97.7589 1.23715L101.791 1.24704M46.1541 1.11067L50.1858 1.12055M136.462 1.33202L140.494 1.3419M26.8024 1.06324L30.834 1.07312M117.111 1.28458L121.142 1.29447M65.5059 1.1581L69.5375 1.16798M155.814 1.37945L159.846 1.38933M13.9012 1.03162L17.9328 1.0415M104.209 1.25296L108.241 1.26285M52.6047 1.12648L56.6364 1.13636M142.913 1.34783L146.945 1.35771M33.253 1.07905L37.2846 1.08893M123.561 1.3004L127.593 1.31028M71.9565 1.17391L75.9881 1.18379M162.265 1.39526L166.296 1.40514M78.4071 1.18972L82.4387 1.1996M168.715 1.41107L172.747 1.42095M84.8577 1.20553L88.8893 1.21542M175.166 1.42688L179.198 1.43676M181.617 1.44269L185.648 1.45257M188.067 1.4585L192.099 1.46838M194.518 1.47431L198.549 1.48419M200.968 1.49012L205 1.5"
+										stroke="black" />
+								</svg>
+								<span class="restaurant-li-price">220 ₽</span>
+							</div>
+						</li>
+						<li class="restaurant-food-li">
+							<img class="restaurant-food-li-img" src="./assets/img/hamburger-1.png" alt="">
+							<div class="restaurant-food-li-content">
+								<span class="restaurant-li-name">Гамбургер мини </span>
+								<svg width="206" height="2" viewBox="0 0 206 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M1 1L5.03162 1.00988M91.3083 1.22134L95.3399 1.23123M39.7036 1.09486L43.7352 1.10474M130.012 1.31621L134.043 1.32609M20.3518 1.04743L24.3834 1.05731M110.66 1.26877L114.692 1.27866M59.0553 1.14229L63.087 1.15217M149.364 1.36364L153.395 1.37352M7.45059 1.01581L11.4822 1.02569M97.7589 1.23715L101.791 1.24704M46.1541 1.11067L50.1858 1.12055M136.462 1.33202L140.494 1.3419M26.8024 1.06324L30.834 1.07312M117.111 1.28458L121.142 1.29447M65.5059 1.1581L69.5375 1.16798M155.814 1.37945L159.846 1.38933M13.9012 1.03162L17.9328 1.0415M104.209 1.25296L108.241 1.26285M52.6047 1.12648L56.6364 1.13636M142.913 1.34783L146.945 1.35771M33.253 1.07905L37.2846 1.08893M123.561 1.3004L127.593 1.31028M71.9565 1.17391L75.9881 1.18379M162.265 1.39526L166.296 1.40514M78.4071 1.18972L82.4387 1.1996M168.715 1.41107L172.747 1.42095M84.8577 1.20553L88.8893 1.21542M175.166 1.42688L179.198 1.43676M181.617 1.44269L185.648 1.45257M188.067 1.4585L192.099 1.46838M194.518 1.47431L198.549 1.48419M200.968 1.49012L205 1.5"
+										stroke="black" />
+								</svg>
+								<span class="restaurant-li-price">220 ₽</span>
+							</div>
+						</li>
+						<li class="restaurant-food-li">
+							<img class="restaurant-food-li-img" src="./assets/img/hamburger-1.png" alt="">
+							<div class="restaurant-food-li-content">
+								<span class="restaurant-li-name">Гамбургер мини </span>
+								<svg width="206" height="2" viewBox="0 0 206 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M1 1L5.03162 1.00988M91.3083 1.22134L95.3399 1.23123M39.7036 1.09486L43.7352 1.10474M130.012 1.31621L134.043 1.32609M20.3518 1.04743L24.3834 1.05731M110.66 1.26877L114.692 1.27866M59.0553 1.14229L63.087 1.15217M149.364 1.36364L153.395 1.37352M7.45059 1.01581L11.4822 1.02569M97.7589 1.23715L101.791 1.24704M46.1541 1.11067L50.1858 1.12055M136.462 1.33202L140.494 1.3419M26.8024 1.06324L30.834 1.07312M117.111 1.28458L121.142 1.29447M65.5059 1.1581L69.5375 1.16798M155.814 1.37945L159.846 1.38933M13.9012 1.03162L17.9328 1.0415M104.209 1.25296L108.241 1.26285M52.6047 1.12648L56.6364 1.13636M142.913 1.34783L146.945 1.35771M33.253 1.07905L37.2846 1.08893M123.561 1.3004L127.593 1.31028M71.9565 1.17391L75.9881 1.18379M162.265 1.39526L166.296 1.40514M78.4071 1.18972L82.4387 1.1996M168.715 1.41107L172.747 1.42095M84.8577 1.20553L88.8893 1.21542M175.166 1.42688L179.198 1.43676M181.617 1.44269L185.648 1.45257M188.067 1.4585L192.099 1.46838M194.518 1.47431L198.549 1.48419M200.968 1.49012L205 1.5"
+										stroke="black" />
+								</svg>
+								<span class="restaurant-li-price">220 ₽</span>
+							</div>
+						</li>
+
+
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="section1 restaurant-menu">
+			<h3 class="section-h1 restaurant-menu-h1">Наше меню</h3>
+			<div class="restaurant-menu-flex-box container">
+				<div class="restaurant-menu-flex-card">
+					<div class="recommend">RECOMMENDED</div>
+					<div class="img-block">
+						<img src="./assets/img/burger.png" alt="">
+						<div class="menu-price">420</div>
+					</div>
+					<span class="menu-card-name">Гамбургер макси</span>
+					<span class="menu-card-description">Максимально толстый
+						слой мяса</span>
+					<button class="button delivery__button">ЗАКАЗАТЬ</button>
+				</div>
+
+				<div class="restaurant-menu-flex-card">
+					<div class="recommend">RECOMMENDED</div>
+					<div class="img-block">
+						<img src="./assets/img/burger.png" alt="">
+						<div class="menu-price">420</div>
+					</div>
+					<span class="menu-card-name">Гамбургер макси</span>
+					<span class="menu-card-description">Максимально толстый
+						слой мяса</span>
+					<button class="button delivery__button">ЗАКАЗАТЬ</button>
+				</div>
+				<div class="restaurant-menu-flex-card">
+					<div class="recommend">RECOMMENDED</div>
+					<div class="img-block">
+						<img src="./assets/img/burger.png" alt="">
+						<div class="menu-price">420</div>
+					</div>
+					<span class="menu-card-name">Гамбургер макси</span>
+					<span class="menu-card-description">Максимально толстый
+						слой мяса</span>
+					<button class="button delivery__button">ЗАКАЗАТЬ</button>
+				</div>
+				<div class="restaurant-menu-flex-card">
+					<div class="img-block">
+						<img src="./assets/img/burger.png" alt="">
+						<div class="menu-price">420</div>
+					</div>
+					<span class="menu-card-name">Гамбургер макси</span>
+					<span class="menu-card-description">Максимально толстый
+						слой мяса</span>
+					<button class="button delivery__button">ЗАКАЗАТЬ</button>
+				</div>
+				<div class="restaurant-menu-flex-card">
+					<div class="img-block">
+						<img src="./assets/img/burger.png" alt="">
+						<div class="menu-price">420</div>
+					</div>
+					<span class="menu-card-name">Гамбургер макси</span>
+					<span class="menu-card-description">Максимально толстый
+						слой мяса</span>
+					<button class="button delivery__button">ЗАКАЗАТЬ</button>
+				</div>
+				<div class="restaurant-menu-flex-card">
+					<div class="img-block">
+						<img src="./assets/img/burger.png" alt="">
+						<div class="menu-price">420</div>
+					</div>
+					<span class="menu-card-name">Гамбургер макси</span>
+					<span class="menu-card-description">Максимально толстый
+						слой мяса</span>
+					<button class=" delivery__button">ЗАКАЗАТЬ</button>
+				</div>
+			</div>
+		</section>
+		<section class="section reviews__section">
+			<div class="container review ">
+				<span class="review-text">Я надолго запомню мой День рождения, проведённый в этом ресторане! Кусочек родной
+					Армении!!! Отдельное спасибо за комплепент в виде фруктовой тарелки. Будем рекомендовать этот ресторан
+					своим друзьям и родственникам также за рубежом, путешествующих в Санкт-Петербург!!!</span>
+				<img class="review-img" src="./assets/img/Nikolay.png" alt="">
+				<span class="review-role">Посетитель</span>
+				<h5 class="review-owner">Николай</h5>
+			</div>
+		</section>
+		<section class="section gallery-food">
+			<h4 class="section-h1">Галерея <span class="orange">Блюд</span></h4>
+			<div class="gallery-food-photos container">
+				<span class="slides">
+					<img class="slides1" src="./assets/img/gallery-food-1.png" alt="">
+					<img class="slides2" src="./assets/img/gallery-food-2.png" alt="">
+					<img class="slides3" src="./assets/img/gallery-food-3.png" alt="">
+				</span>
+				<span class="slides slides-2">
+					<img src="./assets/img/gallery-food-1.png" alt="">
+					<img src="./assets/img/gallery-food-2.png" alt="">
+					<img src="./assets/img/gallery-food-3.png" alt="">
+				</span>
+			</div>
+		</section>
+		<section class="section gallery-cook">
+			<h6 class="section-h1">Наши <span class="orange">Повара</span></h6>
+			<span class="slides container gallery-cook-slides-mod">
+				<img src="./assets/img/cook1.png" alt="">
+				<img src="./assets/img/cook2.png" alt="">
+				<img src="./assets/img/cook3.png" alt="">
+			</span>
+		</section>
+		<footer class="footer"></footer>
+	</div>
+	<script src="./script/script.js"></script>
+</body>
+
+</html>
